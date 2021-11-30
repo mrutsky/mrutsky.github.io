@@ -60,35 +60,36 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(images/Bricks_bg.jpg)
+  background: url(images/marble.jpg)
 	center center fixed no-repeat;
 	background-size: cover; 
+	font-family:"helvetica", sans-serif;
 }
 
 .center {
-    width: 800px;
+    width: 80%;
 	padding: 2%;
     margin: 100px auto;
- 	background: rgba(0, 150, 178, .75); /*this uses opacity of 75% for the background color*/
+ 	background: rgb(182, 206, 252); /*this uses opacity of 75% for the background color*/
 	text-align: center;
-	border: 4px dashed white;
+	
 }
 
    
 #logo {
     margin-bottom: 16px;
-	border: 3px dashed red;
 	text-align: center;
 }
 
 h1 {
 	/* FONT-FAMILY GOES HERE CHOOSE FROM ADOBE FONTS OR GOOGLE FONTS */
-	font-family: mostra-nuova, sans-serif;
-	font-weight: 400;
+	
+	font-family: alternate-gothic-extra-cond, sans-serif;
+	font-weight: 100;
 	font-style: normal;
-	font-size: 2em;
-    margin: 0px auto 10px auto;
-    color: #fff;
+	color: white;
+
+
 }
 
 h2 {
@@ -98,7 +99,7 @@ h2 {
 	 font-style: normal;
 	 font-size: 1.5em;
     line-height: 1.4;
-    color: #fff;
+    color: rgb(255, 180, 236);
     padding: 0px 0px;
     margin: 0px auto 25px auto;
 }
@@ -114,11 +115,11 @@ p {
 }
     
 nav{
-	font-family:garamond;
-	font-size:1.2em;
-	width: 400px;
+	font-family: alternate-gothic-extra-cond, sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	color: white;
 	margin: 0 auto;
-	border: dashed turquoise; 
 	border-width: 3px 0;
 	text-align: center; 
 	margin-top: 2em; 
@@ -134,12 +135,12 @@ nav a{
 
 }
 a{
-	color: #444;
+	color: rgb(255, 255, 255);
 	text-decoration: none;
 	font-weight: bold;
 
 }
 a:hover{
 	color:black; 
-	background:pink;
+	
 }
