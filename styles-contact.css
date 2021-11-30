@@ -85,10 +85,10 @@ h1 {
 	/* FONT-FAMILY GOES HERE CHOOSE FROM ADOBE FONTS OR GOOGLE FONTS */
 	
 	font-family: alternate-gothic-extra-cond, sans-serif;
-	font-weight: 100;
+	font-weight: 300;
 	font-style: normal;
 	color: white;
-
+	font-size:1.5em;
 
 }
 
