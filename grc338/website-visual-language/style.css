@@ -39,11 +39,6 @@ body{
 
 }
 
-New Hero Regular{
-font-family: "new-hero", sans-serif;
-font-weight: 400;
-font-style: normal;
-}
 
 main { 
 	padding: 0em 0em 0em;
@@ -61,32 +56,50 @@ header {
 	grid-template-columns: 1fr 3fr;
 	background: rgb(204, 204, 204);
 	padding: 1.5em 2em;
+	font-family: "new-hero", sans-serif;
+	font-weight: 400;
+	font-style: normal;
     
 	}
 
 h1 {
 	width: 15em;
+	font-family: "new-hero", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	}
 
 h2, h3, h4 {
 		font-weight: bold;
+		font-family: "new-hero", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	}
 
 h2 {
 	font-size: 2em;
 	margin: 1em 0em 0.5em 1em;
 	color: rgb(169, 121, 103);
+	font-family: "new-hero", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	}
 	
 h3 {
 	font-size: 1.3em;
 	margin: 1em 0em 0em 1.5em;
 	color: rgb(169, 121, 103);
+	font-family: "new-hero", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 h4 {
 	font-size: 1rem;
 	margin: 1em 0em 0em 0em;
 	color: rgb(169, 121, 103);
+	font-family: "new-hero", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 a {
