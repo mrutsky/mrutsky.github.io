@@ -28,10 +28,11 @@ div.container {
 	
 	}
 
-
 /* >>> IMPORTANT: you have to change the wrap the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class.  */
 body{ 
-    font-family: New Hero;
+    font-family: "new-hero", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	background-color: rgb(245, 245, 245);
 	padding-bottom: 1em;
 
