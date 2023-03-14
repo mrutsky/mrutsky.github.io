@@ -59,7 +59,7 @@ header {
 	padding: 1.5em 2em;
 	font-family: "new-hero", sans-serif;
 	font-weight: 400;
-	font-style: normal;
+	font-style: bold;
     
 	}
 
@@ -185,8 +185,9 @@ p.slogan {
 	font-family: serif;
 	padding: 1em 0.5em 3em 0.5em;
 	color:rgb(255, 255, 255);
-	font-family: New Hero;
-	font-style: bold;
+	font-family: "new-hero", sans-serif;
+	font-weight: 400;
+	font-style: normal;
     
 	}
 
