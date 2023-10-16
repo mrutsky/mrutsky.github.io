@@ -1,56 +1,69 @@
-<!doctype html>
-		<html>
-			<head>
-				<meta charset="UTF-8" />
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<title>CSS photo gallery</title>
-                <link rel="stylesheet" type="text/css" href="photogallery.css">
-			</head>	
-			<body>
-                <div class="container">
-                    
-                    <input type="radio" name="item" id="photo1" checked="checked">
-                    <input type="radio" name="item" id="photo2">
-                    <input type="radio" name="item" id="photo3">
-                    <input type="radio" name="item" id="photo4">
-                    
-                    <h1>California</h1>
-                    
-                    <main>
-                        <figure>
-                            <img src="linda-pomerantz-zhang-XOeCBcX42s4-unsplash.jpg" alt="Walt Disney Concert Hall in Los Angeles during sunset.">
-                            <figcaption>Los Angeles</figcaption> <!-- Photo by Linda Pomerantz Zhang (@lindapz) on Unsplash. -->
-                        </figure>
-                        <figure>
-                            <img src="kyle-cottrell-UhbHdLZ22SI-unsplash.jpg" alt="Morro Rock in Morro Bay during sunset.">
-                            <figcaption>Morro Bay</figcaption> <!-- Photo by Kyle Cottrell (@kcottrell) on Unsplash. -->
-                        </figure>
-                        <figure>
-                            <img src="megan-ellis-6C35p33MiQ4-unsplash.jpg" alt="View of PetCo Park on a game day in San Diego, with the Downtown skyline in the background." > 
-                            <figcaption>San Diego</figcaption>  <!-- Photo by Megan Ellis (@meganmarieee19) on Unsplash. -->
-                        </figure>
-                        <figure>
-                            <img src="daniel-abadia-3hslPaZKqUM-unsplash.jpg" alt="Cable cars on Powell Street in San Francisco on a sunny day.">
-                            <figcaption>San Francisco</figcaption> <!-- Photo by Daniel Abadia (@pixeldan) on Unsplash. -->
-                        </figure>
-                    </main>
-                    
-                    <nav>
-                        <label for="photo1">
-                            <img src="linda-pomerantz-zhang-XOeCBcX42s4-unsplash.jpg" alt="Walt Disney Concert Hall in Los Angeles during sunset.">
-                        </label>
-                        <label for="photo2">
-                            <img src="kyle-cottrell-UhbHdLZ22SI-unsplash.jpg" alt="Morro Rock in Morro Bay during sunset.">
-                        </label>
-                        <label for="photo3">
-                            <img src="megan-ellis-6C35p33MiQ4-unsplash.jpg" alt="View of PetCo Park on a game day in San Diego, with the Downtown skyline in the background.">
-                        </label>
-                        <label for="photo4">
-                            <img src="daniel-abadia-3hslPaZKqUM-unsplash.jpg" alt="Cable cars on Powell Street in San Francisco on a sunny day.">
-                        </label>
-                    </nav>
-                                    
-                </div>
-					
-			</body>
-		</html>
+/*CSS document*/
+
+body {
+    font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #ddd;
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding-top: 2em;
+    margin-bottom: 1em;
+}
+
+img {
+	width: 100%;
+}
+
+
+div.container {
+    background-color: #fafafa;
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+
+main {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(72% + 3em);
+}
+
+figure{
+    margin: 0;
+    width: calc(100%-2em);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+figcaption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 1em 0;
+    color: #888;
+}
+
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4){
+    opacity: 1;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 0.2em;
+}
+
+
+input {
+    display: none;
+}
