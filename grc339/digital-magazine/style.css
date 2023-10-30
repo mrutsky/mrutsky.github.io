@@ -1,0 +1,38 @@
+/*CSS document*/
+
+nav{
+    font-family: Didot;
+    font-style: normal;
+    font-size: 1.5em;
+    color: rgb(50, 45, 48);
+    text-decoration: none;
+}
+
+body {
+font-family: Didot;
+text-decoration: none;
+
+}
+
+div.container {
+    max-width: 40em;
+    margin: auto;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: rgb(212, 155, 155);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+
+}
